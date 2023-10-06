@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+nav ul li {
+    width: 10%;
+    text-align: center;
+
+}
+
+header {
+    display: flex;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+header section {
+    flex-basis: 50%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.logo section img {
+    width: 40%;
+}
+
+input[type=submit] {
+    color: white;
+    background-color: slategray;
+    padding: 8px 32px;
+}
+
+.font-size-18-rem {
+    font-size: 2rem;
+}
+
+.margin-bottom-32 {
+    margin-bottom: 32px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.firstEmailSignUp {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+    justify-content: center;
+}
+
+.firstEmailSignUp input[type=text] {
+    width: 60%;
+    padding: 8px;
+}
+
+.firstEmailSignUp input[type=Submit] {
+    width: 25%;
+    padding: 8px;
+}
+
+.silhoutte {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.firstBreak {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.divider {
+    width: 80%;
+    height: 1px;
+    background-color: pink;
+}
+
+.italics {
+    color: lightgray;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.middleSection {
+    background-color: lightgray;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.middleSection h2 {
+    flex-basis: 100%;
+}
+
+.secondBreak {
+    padding: 40px;
+}
+
+.secondBreak h2 {
+    text-align: center;
+}
+
+.history-text {
+    flex-basis: 75%;
+}
+
+.history-text p {
+    font-size: 1.5rem;
+
+}
+
+.history-images {
+    text-align: center;
+    flex-basis: 25%;
+}
+
+.history-images section img {
+    width: 200px;
+    height: 200px;
+}
+
+.founder {
+    display: flex;
+    border: 1px solid grey;
+    padding: 20px;
+}
+
+.founder-img {
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.founder-text {
+    font-size: 1.5rem;
+    flex-basis: 75%;
+}
+
+.founder-text h3 {
+    font-size: 2rem;
+}
+
+.bottomSection {
+    margin: 50px;
+    display: flex;
+}
+
+.fish h3 p {
+    font-size: 2rem;
+}
+
+
+.banner {
+    background-color: lightgray;
+    padding: 10px;
+    display: flex;
+}
+
+.banner > * {
+   flex-basis: 50%;
+}
+
+.lastEmailSignUp {
+    padding: 20px;
+}
+
+.lastEmailSignUp input[type=text] {
+    width: 60%;
+    padding: 8px;
+}
+
+.lastEmailSignUp input[type=Submit] {
+    width: 25%;
+    padding: 8px;
+}
+
+.socialLinks {
+    padding: 20px;
+}
+
+footer {
+    padding: 10px;
+    background-color: slategray;
+    list-style: none;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.footerTags {
+    display: flex;
+    padding: 40px;
+}
+
+.footerTags ul {
+    list-style-type: none;
+    width: 15%;
+}
+
+.image-container img {
+    height: 50px;
+}
+
+.burger-menu {
+    display: none;
+}
+
+@media screen and (max-width:390px) {
+    nav ul {
+        display: none;
+    }
+    .burger-menu {
+        display: block
+    }
+    .silhoutte {
+        display: none
+    }
+    .background {
+        padding: 0;
+        flex-basis: 100%;
+    }
+    .logo {
+        flex-basis: 100%;
+    }
+    .founder, .bottomSection {
+        flex-direction: column;
+    }
+    footer {
+        display: none;
+    }
+    .history-images {
+        flex-basis: 100%;
+    }
+    .history-images section {
+        text-align: center;
+    }
+    .donate {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        display: none;
+    }
+    
+    header {
+        display: none;
+    }
+    .founder {
+        display: block;
+    }
+    footer {
+        display: none;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .founder-text {
+        padding: 10px;
+    }
+  }
+  
+  
